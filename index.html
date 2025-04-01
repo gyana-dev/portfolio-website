@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Gyana Dev</title>
+    <title>Gyana Dev | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
     
     <!-- Navbar -->
-    <nav class="p-4 bg-gray-800 flex justify-between">
+    <nav class="p-4 bg-gray-800 flex justify-between items-center">
         <h1 class="text-xl font-bold">Gyana Dev</h1>
         <ul class="flex gap-4">
             <li><a href="#home" class="hover:text-blue-400">Home</a></li>
@@ -21,7 +21,7 @@
     
     <!-- Hero Section -->
     <section id="home" class="h-screen flex flex-col justify-center items-center text-center">
-        <h2 class="text-4xl font-bold">Hi, I'm Gyana Dev</h2>
+        <h2 class="text-4xl font-bold animate-fade-in">Hi, I'm Gyana Dev</h2>
         <p class="text-xl mt-2">Front-End Developer | Python & Web Enthusiast</p>
         <a href="#projects" class="mt-4 px-6 py-2 bg-blue-500 rounded-lg hover:bg-blue-600">View My Work</a>
     </section>
@@ -29,12 +29,16 @@
     <!-- Projects Section -->
     <section id="projects" class="p-8 text-center">
         <h2 class="text-3xl font-bold">Projects</h2>
-        <p class="text-gray-400">Some of my best work</p>
+        <p class="text-gray-400">Here are some of my recent projects:</p>
         <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Sample Project -->
-            <div class="p-4 bg-gray-800 rounded-lg">
-                <h3 class="text-xl font-semibold">Project Name</h3>
-                <p class="text-gray-400">Short project description</p>
+        <div class="p-4 bg-gray-800 rounded-lg transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold">Portfolio Website</h3>
+                <p class="text-gray-400">A personal portfolio built with HTML, CSS, and Tailwind.</p>
+                <a href="https://gyana-dev.github.io/portfolio-website/" class="text-blue-400">View Project</a>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-lg transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold">Weather App</h3>
+                <p class="text-gray-400">A web app that fetches real-time weather data.</p>
                 <a href="#" class="text-blue-400">View Project</a>
             </div>
         </div>
@@ -43,18 +47,21 @@
     <!-- About Section -->
     <section id="about" class="p-8 text-center">
         <h2 class="text-3xl font-bold">About Me</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">I'm a passionate front-end developer skilled in HTML, CSS, JavaScript, and React.js...</p>
+        <p class="text-gray-400 max-w-2xl mx-auto">I'm a passionate front-end developer with expertise in HTML, CSS, JavaScript, and React. I enjoy building beautiful, responsive web applications.</p>
     </section>
     
     <!-- Contact Section -->
     <section id="contact" class="p-8 text-center">
         <h2 class="text-3xl font-bold">Contact Me</h2>
-        <p class="text-gray-400">Let's connect! Find me on:</p>
-        <div class="mt-4 flex justify-center gap-4">
+        <p class="text-gray-400">Let's connect! You can find me here:</p>
+        <div class="p-4 bg-gray-800 rounded-lg transform transition duration-500 hover:scale-105">
             <a href="https://github.com/gyana-dev" class="text-blue-400">GitHub</a>
             <a href="#" class="text-blue-400">LinkedIn</a>
+            <a href="mailto:gyanaranjandas88472@gmail.com" class="text-blue-400">Email</a>
         </div>
     </section>
+
     
 </body>
 </html>
+
