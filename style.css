@@ -1,53 +1,97 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f9f9f9;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #007bff;
-    color: white;
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-section {
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
 }
 
-.skills-list span {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
+.slide-left {
+    animation: slideInLeft 1s ease-in-out;
 }
 
-.project {
-    background: white;
+.slide-right {
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Hover Effects */
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Project Card Styles */
+.project-card {
+    display: inline-block;
+    margin: 20px;
     padding: 15px;
-    margin: 15px 0;
-    border-left: 5px solid #007bff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 300px;
 }
 
-.project a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
