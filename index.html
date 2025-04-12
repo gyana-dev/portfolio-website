@@ -2,73 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gyana Dev | Portfolio</title>
-  <link rel="stylesheet" href="styles-new.css" />
-  <!-- AOS Animation Library -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style-new.css" />
 </head>
 <body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Navbar -->
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" data-aos="fade-up">
-    <h1>Hey, I'm Gyana</h1>
-    <p>Frontend Developer | JavaScript & Python Enthusiast</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" data-aos="fade-up">
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I'm a passionate developer focused on building responsive and dynamic web apps using HTML, CSS, JavaScript, and Python. I love crafting clean UIs and smooth user experiences.
-    </p>
+    <p>Hello, I'm a front-end developer passionate about building modern and responsive websites. I enjoy working with HTML, CSS, JavaScript, and Python to create meaningful web experiences.</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card" data-aos="zoom-in">
-        <h3>To-Do App</h3>
-        <p>A sleek, dark-mode To-Do app built with HTML, CSS, and JavaScript.</p>
-        <a href="https://github.com/gyana-dev/todo-app" target="_blank">GitHub</a>
-        <a href="https://gyana-dev.github.io/todo-app/" target="_blank">Live Demo</a>
-      </div>
+  <section id="projects">
+    <h2>My Projects</h2>
 
-      <!-- Add more project cards here if needed -->
+    <!-- Weather App Project -->
+    <div class="project">
+      <h3>🌦️ Weather App</h3>
+      <p>A clean weather app that fetches real-time weather using OpenWeather API with a dark mode interface.</p>
+      <a href="https://gyana-dev.github.io/portfolio-website/weather-app/index.html" target="_blank">
+        <button>View Weather App</button>
+      </a>
     </div>
+
+    <!-- To-Do App Project -->
+    <div class="project">
+      <h3>📝 To-Do App</h3>
+      <p>A modern to-do list app to manage daily tasks. Features dark mode, local storage, and responsive design.</p>
+      <a href="https://gyana-dev.github.io/portfolio-website/todo-app/index.html" target="_blank">
+        <button>View To-Do App</button>
+      </a>
+    </div>
+
+    <!-- Add more projects below -->
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Let's connect! Feel free to reach out:</p>
-    <a href="mailto:gyanaranjandas88472@gmail.com">📧 Email Me</a> |
-    <a href="https://github.com/gyana-dev" target="_blank">💻 GitHub</a>
+    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:gyanaranjandas88472@gmail.com">gyanaranjandas88472@gmail.com</a>.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Gyana Dev. All rights reserved.</p>
+    <p>© 2025 My Portfolio</p>
   </footer>
-
-  <!-- AOS Animation Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
